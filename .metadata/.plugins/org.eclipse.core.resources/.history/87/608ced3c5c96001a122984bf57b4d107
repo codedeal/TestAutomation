@@ -1,0 +1,80 @@
+package com.SmokeSuite;
+
+import java.util.HashSet;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.Pages.DraggablePage;
+import com.Pages.DroppablePage;
+import com.Pages.HomePage;
+import com.Pages.SelectablePage;
+import com.Setup.TestBase;
+import com.Setup.WebDriverFactory;
+
+public class HomePageTest extends TestBase
+{
+	
+	HomePage homepage;
+
+	public HomePageTest() {
+		super();
+	}
+	@BeforeMethod
+	public void Initliaze()
+	{
+		
+		log.info("****************************** Starting test cases execution  *****************************************");
+		homepage = new HomePage();
+		
+	}
+	
+   @Test
+   public void demo()
+   {
+	  log.info("Testing Demo");
+   }
+    
+    @Test
+    public void Test1()
+    {
+    	log.info("in test case 2");
+    
+    	homepage.naviageteToSortablePage();
+    }
+    
+   
+    
+   // @Test
+    public void Test2()
+    {
+    	log.info("in test case 2");
+   
+    	SelectablePage selectablePage=homepage.naviageteToSelectablePage();
+    	selectablePage.selectItemandPrintName(3);
+    	
+    }
+   // @Test
+    public void doSomething()
+    {
+    	String res="";
+    	HashSet<Character>s= new HashSet<Character>();
+    	for(char i:res.toCharArray())
+    		if(!s.contains(i))
+    			s.add(i);
+   	
+    }
+    
+    @AfterMethod
+	public void tearDown(){
+		driver.quit();
+	}
+    
+   
+}

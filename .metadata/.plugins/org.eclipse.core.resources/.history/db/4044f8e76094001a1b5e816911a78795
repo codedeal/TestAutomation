@@ -1,0 +1,58 @@
+package com.Pages;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+
+import com.Setup.TestBase;
+
+public class HomePage extends TestBase
+{
+	 @FindBy(how=How.XPATH,using="//a[text()='Sortable']")
+	 WebElement sortTable;
+	 @FindBy(how=How.XPATH,using="//a[text()='Droppable']")
+	 WebElement droppable;
+	 @FindBy(how=How.XPATH,using="//a[text()='Draggable']")
+	 WebElement dragable;
+	 @FindBy(how=How.XPATH,using="//a[text()='Selectable']")
+	 WebElement selectable;
+	 @FindBy(how=How.XPATH,using="//a[text()='Resizable']")
+	 WebElement resizable;
+	 
+	  public HomePage() {
+		// TODO Auto-generated constructor stub
+		  PageFactory.initElements(driver, this);
+		  
+	   }
+      
+	  public SortablePage naviageteToSortablePage()
+	  {
+		  action.Clickelement(sortTable);
+		  return new SortablePage();
+	  }
+      
+	  public DroppablePage naviageteToDroppablePage()
+	  {
+		  action.Clickelement(droppable);
+		  return new DroppablePage();
+	  }
+	  
+	  public DraggablePage naviageteToDraggablePage()
+	  {
+		  action.Clickelement(dragable);
+		  return new DraggablePage();
+	  }
+	  
+	  public ResizablePage naviageteToResizablePage()
+	  {
+		  action.Clickelement(resizable);
+		  return new ResizablePage();
+	  }
+	  
+	  public SelectablePage naviageteToSelectablePage()
+	  {
+		  action.Clickelement(selectable);
+		  return new SelectablePage();
+	  }
+}

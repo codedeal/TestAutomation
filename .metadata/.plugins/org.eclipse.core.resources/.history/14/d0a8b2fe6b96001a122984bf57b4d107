@@ -1,0 +1,71 @@
+package com.SmokeSuite;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import com.Pages.HomePage;
+import com.Setup.TestBase;
+
+public class HomePageTest extends TestBase
+{
+	
+	HomePage homepage;
+
+	public HomePageTest() {
+		super();
+	}
+	
+	@BeforeMethod
+	public void Initliaze()
+	{
+		
+		log.info("****************************** Starting test cases execution  *****************************************");
+		initialization();
+		homepage = new HomePage();
+		
+	}
+	
+   @Test
+   public void demo()
+   {
+	  log.info("Testing Demo");
+   }
+    
+    @Test
+    public void Test1()
+    {
+    	log.info("in test case 2");
+    
+    	homepage.naviageteToSortablePage();
+    }
+    
+   
+//    
+//   // @Test
+//    public void Test2()
+//    {
+//    	log.info("in test case 2");
+//   
+//    	SelectablePage selectablePage=homepage.naviageteToSelectablePage();
+//    	selectablePage.selectItemandPrintName(3);
+//    	
+//    }
+//   // @Test
+//    public void doSomething()
+//    {
+//    	String res="";
+//    	HashSet<Character>s= new HashSet<Character>();
+//    	for(char i:res.toCharArray())
+//    		if(!s.contains(i))
+//    			s.add(i);
+//   	
+//    }
+    
+    @AfterMethod
+	public void tearDown(){
+    	log.debug("Ending Driver Session");
+		driver.quit();
+	}
+    
+   
+}
