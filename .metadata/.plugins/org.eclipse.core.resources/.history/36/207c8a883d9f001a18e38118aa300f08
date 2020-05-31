@@ -1,0 +1,42 @@
+package com.Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+import com.Setup.TestBase;
+
+public class FormsPage extends TestBase
+{
+	 @FindBy(how=How.XPATH,using="//div[contains(@class,'col-md-6') and contains(text(),'Please')]")
+	 WebElement headingOfPage;
+	 
+	 @FindBy(how=How.XPATH,using="//*[@id='app']/div/div/div[2]/div[1]/div/div/div[2]/span/div/div[2]/div[2]")
+	 WebElement seperatoricon;
+	 @FindBy(how=How.XPATH,using="//span[text()='Practice Form']")
+	 WebElement practiceForm;
+	  public FormsPage() {
+			// TODO Auto-generated constructor stub
+			  PageFactory.initElements(driver, this);
+			  
+		   }
+	  
+	  
+	  
+	  
+	  public String titleOfPage()
+	  {
+		  return driver.getTitle();
+	  }
+     
+	  public String objectiveOfPage()
+	  {
+		  return action.getText(headingOfPage);
+	  }
+	  
+	  public void SwitchToPracticeForm()
+	  {
+		  action.Clickelement(practiceForm);
+	  }
+}

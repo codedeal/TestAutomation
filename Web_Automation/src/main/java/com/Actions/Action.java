@@ -131,6 +131,14 @@ public class Action extends TestBase
 		jse.executeScript("scroll(0, 250)");
 		}
 	}
+	public void scrollToElementUp(WebElement element,int index)
+	{
+		while(!element.isDisplayed())
+		{
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("scroll(0, -150)");
+		}
+	}
 	
 	public String getAttributeData(WebElement element)
 	{
@@ -168,5 +176,35 @@ public class Action extends TestBase
 		action.dragAndDropBy(resizeElement, 100, 100).perform();;
 		
 	}
+	
+	public void navigateSliderForward(WebElement slider,double value)
+	{
+		   double minValue = Double.parseDouble(slider.getAttribute("min"));
+		    double maxValue = Double.parseDouble(slider.getAttribute("max"));
+		    int sliderH = slider.getSize().height;
+		    int sliderW = slider.getSize().width;
+		    System.out.println(sliderH);
+		    System.out.println(sliderW);
+		  //  action.moveToElement(slider, (int) (value * sliderW / (maxValue - minValue)), sliderH / 2).click().build().perform();
+		//action.dragAndDropBy(slider, (int) (value * sliderW / (maxValue - minValue)), 0).perform();
+	    action .clickAndHold(slider).moveByOffset(99,0).release().perform();  
+	}
+	public void navigateSliderBackWard(WebElement slider)
+	{
+		//action.dragAndDropBy(slider, -1, 0).perform();
+		// action .clickAndHold(slider).moveByOffset(-5,0).release().perform();  
+		 int PixelsToMove = GetPixelsToMove(slider, 2, 100, 0);
+		 action.clickAndHold(slider).moveByOffset((-(int)(slider.getSize().width/2)), 0).moveByOffset(PixelsToMove, 0).release().perform();
+	}
+	
+	public static int GetPixelsToMove(WebElement Slider, int Amount, int SliderMax, int SliderMin)
+    {
+        int pixels = 0;
+        double tempPixels = Slider.getSize().width;
+        tempPixels = tempPixels / (SliderMax - SliderMin);
+        tempPixels = tempPixels * (Amount - SliderMin);
+        pixels = (int)(tempPixels);
+        return pixels;
+    }
 
 }

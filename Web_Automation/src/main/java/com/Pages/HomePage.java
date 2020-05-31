@@ -20,6 +20,12 @@ public class HomePage extends TestBase
 	 @FindBy(how=How.XPATH,using="//a[text()='Resizable']")
 	 WebElement resizable;
 	 
+	// @FindBy(how=How.XPATH,using="//div[@class='card-body']/h5[text()='Forms']//parent::div")
+	 @FindBy(how=How.XPATH,using="//*[@id='app']/div/div/div[2]/div/div[2]/div/div[2]")
+	 WebElement forms;
+	 @FindBy(how=How.XPATH,using="//*[@id='app']/div/div/div[2]/div/div[4]/div/div[1]")
+	 WebElement widgets;
+	 
 	  public HomePage() {
 		// TODO Auto-generated constructor stub
 		  PageFactory.initElements(driver, this);
@@ -60,4 +66,21 @@ public class HomePage extends TestBase
 		  action.Clickelement(selectable);
 		  return new SelectablePage();
 	  }
+	  
+	  public FormsPage naviageteToFormsPage()
+	  {
+		  log.info("navigate to Forms Page");
+		  action.scrollToElement();
+		  action.Clickelement(forms);
+		  return new FormsPage();
+	  }
+	  
+	  public WidgetPage naviageteToWidgetPage()
+	  {
+		  log.info("navigate to Widget Page");
+		  action.scrollToElement();
+		  action.Clickelement(widgets);
+		  return new WidgetPage();
+	  }
+	  
 }

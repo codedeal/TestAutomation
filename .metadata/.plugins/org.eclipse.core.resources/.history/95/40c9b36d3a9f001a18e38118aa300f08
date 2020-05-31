@@ -1,0 +1,7 @@
+package com.Pages;
+
+import com.Setup.TestBase;
+
+public class FormsPage extends TestBase{
+
+}

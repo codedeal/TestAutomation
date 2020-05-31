@@ -3,12 +3,11 @@ package com.SmokeSuite;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.Pages.DraggablePage;
 import com.Pages.DroppablePage;
+import com.Pages.FormsPage;
 import com.Pages.HomePage;
 import com.Pages.ResizablePage;
 import com.Pages.SelectablePage;
@@ -25,7 +24,7 @@ public class HomePageTest extends TestBase
 	ResizablePage resizablePage;
 	DraggablePage draggablePage;
 	DroppablePage droppablePage;
-	
+	FormsPage formPage;
 	
 
 	public HomePageTest() {
@@ -46,7 +45,7 @@ public class HomePageTest extends TestBase
 	
 
     
-   @Test
+  // @Test
    public void performDragandDrop()
    {
 	 
@@ -55,7 +54,7 @@ public class HomePageTest extends TestBase
 	  droppablePage.dragDrop();
    }
    
-   @Test
+   //@Test
    public void performSortingDescending()
    {
 	  Log.info("in performSorting");
@@ -65,7 +64,7 @@ public class HomePageTest extends TestBase
 	  
    }
    
-   @Test(priority=1)
+  // @Test(priority=1)
    public void resizeTheBox()
    {
 	   Log.info("inresizing the box");
@@ -75,8 +74,20 @@ public class HomePageTest extends TestBase
 	   Log.info("resizing the box completed");
 	   
    }
-   
    @Test
+   public void practiceFormTest()
+   {
+	   Log.info("Practice Forms");
+	   formPage = homePage.naviageteToFormsPage();
+	   Assert.assertEquals(formPage.titleOfPage(),"ToolsQA");
+	   Assert.assertEquals(formPage.objectiveOfPage(),"Please select an item from left to start practice.");
+	
+	   formPage.SwitchToPracticeForm();
+	   formPage.fillthePerform();
+	   
+	   
+   }
+  // @Test
    public void someFailedTestCase()
    {
 	   Log.info("some failed testcase");
@@ -91,13 +102,5 @@ public class HomePageTest extends TestBase
 		driver.quit();
 	}
     
-    @DataProvider(parallel=true)
-	public Object[][] getData()
-	{
-		Object data[][]=new Object[1][0];
-		
-		data[0][0]="chrome";
-		data[1][0]="firefox";
-		return data;
-	}
+  
 }

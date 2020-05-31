@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedCondition"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.FluentWait"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Wait"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
@@ -15,12 +11,10 @@
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
-<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
 <fullyQualifiedTypeName name="com.Pages.SelectablePage"/>
 <fullyQualifiedTypeName name="com.Pages.SortablePage"/>
 <fullyQualifiedTypeName name="com.Pages.ResizablePage"/>
 <fullyQualifiedTypeName name="com.Pages.DraggablePage"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="com.Actions.Action"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBys"/>
@@ -36,7 +30,6 @@
 <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReports"/>
 <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
 <fullyQualifiedTypeName name="org.testng.ITestListener"/>
-<fullyQualifiedTypeName name="com.Utility.Log"/>
 <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.ExtentEmailReporter"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
@@ -47,7 +40,6 @@
 <fullyQualifiedTypeName name="com.Utility.ExtentTestManager"/>
 <fullyQualifiedTypeName name="com.aventstack.extentreports.MediaEntityBuilder"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="com.Setup.TestBase"/>
 <fullyQualifiedTypeName name="com.Utility.CaptureScreen"/>
 <fullyQualifiedTypeName name="com.Pages.DroppablePage"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
@@ -59,5 +51,13 @@
 <fullyQualifiedTypeName name="com.Setup.WebDriverFactory"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+<fullyQualifiedTypeName name="com.Setup.TestBase"/>
+<fullyQualifiedTypeName name="com.Pages.FormsPage"/>
+<fullyQualifiedTypeName name="com.Utility.Log"/>
+<fullyQualifiedTypeName name="com.SmokeSuite.WidgetPageTest"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="com.Pages.WidgetPage"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 </qualifiedTypeNameHistroy>

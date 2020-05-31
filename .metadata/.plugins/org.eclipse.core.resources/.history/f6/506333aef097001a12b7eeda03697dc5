@@ -1,8 +1,0 @@
-package com.Utility;
-
-import com.Setup.TestBase;
-
-public class CaptureScreen extends TestBase
-{
-
-}

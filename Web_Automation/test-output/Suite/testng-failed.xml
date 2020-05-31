@@ -9,8 +9,8 @@
       <class name="com.SmokeSuite.HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="someFailedTestCase"/>
           <include name="Initliaze"/>
+          <include name="practiceFormTest"/>
         </methods>
       </class> <!-- com.SmokeSuite.HomePageTest -->
     </classes>

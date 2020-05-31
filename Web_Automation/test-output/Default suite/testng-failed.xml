@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SmokeSuite.HomePageTest">
+      <class name="com.SmokeSuite.WidgetPageTest">
         <methods>
-          <include name="performDragandDrop"/>
           <include name="tearDown"/>
-          <include name="someFailedTestCase"/>
+          <include name="changeProgressBar"/>
           <include name="Initliaze"/>
-          <include name="resizeTheBox"/>
-          <include name="performSortingDescending"/>
         </methods>
-      </class> <!-- com.SmokeSuite.HomePageTest -->
+      </class> <!-- com.SmokeSuite.WidgetPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
