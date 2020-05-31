@@ -2817,3 +2817,8 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2020-05-31 15:00:21,609 [Worker-501] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Upendra/Purpose/IDE_Automation/Web_Automation/src/main/resources
 2020-05-31 15:00:21,610 [Worker-501] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-05-31 15:00:21,610 [Worker-501] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Upendra/Purpose/IDE_Automation/Web_Automation/src/test/resources
+2020-05-31 15:24:11,057 [Worker-517] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Web_Automation:Web_Automation:0.0.1-SNAPSHOT @ /Users/Upendra/Purpose/IDE_Automation/Web_Automation/pom.xml.
+2020-05-31 15:24:11,416 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-31 15:24:11,417 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Upendra/Purpose/IDE_Automation/Web_Automation/src/main/resources
+2020-05-31 15:24:11,418 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-31 15:24:11,418 [Worker-517] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Upendra/Purpose/IDE_Automation/Web_Automation/src/test/resources
