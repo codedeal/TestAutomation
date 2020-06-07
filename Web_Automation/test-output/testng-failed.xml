@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.Utility.Log"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.SmokeSuite.WidgetPageTest">
         <methods>
@@ -10,6 +13,15 @@
           <include name="Initliaze"/>
         </methods>
       </class> <!-- com.SmokeSuite.WidgetPageTest -->
+      <class name="com.SmokeSuite.AlertPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSimpleAlertButtonPromt"/>
+          <include name="testSimpleAlertButton"/>
+          <include name="testSimpleAlertButtonTimer"/>
+          <include name="Initliaze"/>
+        </methods>
+      </class> <!-- com.SmokeSuite.AlertPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

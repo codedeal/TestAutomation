@@ -6,13 +6,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.SmokeSuite.HomePageTest">
+      <class name="com.SmokeSuite.WidgetPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="changeProgressBar"/>
           <include name="Initliaze"/>
-          <include name="practiceFormTest"/>
         </methods>
-      </class> <!-- com.SmokeSuite.HomePageTest -->
+      </class> <!-- com.SmokeSuite.WidgetPageTest -->
+      <class name="com.SmokeSuite.AlertPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testSimpleAlertButtonPromt"/>
+          <include name="testSimpleAlertButton"/>
+          <include name="testSimpleAlertButtonTimer"/>
+          <include name="Initliaze"/>
+        </methods>
+      </class> <!-- com.SmokeSuite.AlertPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,8 +1,0 @@
-package com.SmokeSuite;
-
-import com.Setup.TestBase;
-
-public class WidgetPageTest extends TestBase
-{
-
-}

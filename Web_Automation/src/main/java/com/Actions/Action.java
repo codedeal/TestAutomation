@@ -206,5 +206,24 @@ public class Action extends TestBase
         pixels = (int)(tempPixels);
         return pixels;
     }
-
+   
+	public String getalertText()
+	{
+		return driver.switchTo().alert().getText();
+	}
+	public void acceptAlert()
+	{
+		driver.switchTo().alert().accept();
+	}
+	
+	public void switchToAlertAndSendData(String data)
+	{
+		driver.switchTo().alert();
+		driver.switchTo().alert().sendKeys(data);
+	}
+	
+	public String getDataSwtInAlertPrompt()
+	{
+		return (String) ((JavascriptExecutor) driver).executeScript("return window.promptResponse");
+	}
 }

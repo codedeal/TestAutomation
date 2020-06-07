@@ -3,6 +3,7 @@ package com.Utility;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -31,6 +32,36 @@ public class Log implements ITestListener
 		}
 	 
 	}
+    
+	public static void asserts(String expected,String actual) {
+		
+		
+		
+	    ExtentTestManager.getTest().log(Status.INFO, actual);
+	    try{
+
+			CaptureScreen.captureScreenshot();
+			try{
+			Assert.assertEquals(actual, expected);
+			ExtentTestManager.getTest().info("<b>" + "<font color=" + "blue>" + "Expexcted Value Matches"+actual + "</font>" + "</b>"+"<br>",
+					MediaEntityBuilder.createScreenCaptureFromPath(CaptureScreen.screenshotName)
+							.build());
+			}
+			catch(Exception e)
+			{
+				ExtentTestManager.getTest().info("<b>" + "<font color=" + "Red>" + expected+" but found "+actual + "</font>" + "</b>"+"<br>",
+						MediaEntityBuilder.createScreenCaptureFromPath(CaptureScreen.screenshotName)
+								.build());
+			}
+			
+		} catch (IOException e) 
+		{
+                  
+		}
+	  
+	 
+	}
+	
 	private static Logger getLogs()
 	{
 		

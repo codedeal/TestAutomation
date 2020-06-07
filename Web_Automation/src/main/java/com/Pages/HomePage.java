@@ -25,6 +25,10 @@ public class HomePage extends TestBase
 	 WebElement forms;
 	 @FindBy(how=How.XPATH,using="//*[@id='app']/div/div/div[2]/div/div[4]/div/div[1]")
 	 WebElement widgets;
+	 @FindBy(how=How.XPATH,using="//*[@id='app']/div/div/div[2]/div/div[1]/div/div[2]")
+	 WebElement elementsDrop;
+	 @FindBy(how=How.XPATH,using="//*[@id='app']/div/div/div[2]/div/div[3]")
+	 WebElement alertsPage;
 	 
 	  public HomePage() {
 		// TODO Auto-generated constructor stub
@@ -83,4 +87,19 @@ public class HomePage extends TestBase
 		  return new WidgetPage();
 	  }
 	  
+	  public ElementsPage naviageteToElementssPage()
+	  {
+		  log.info("navigate to Elements Page");
+		//  action.scrollToElement();
+		  action.Clickelement(elementsDrop);
+		  return new ElementsPage();
+	  }
+	  
+	  public AlertsPage naviageteToAlertsPage()
+	  {
+		  log.info("navigate to Alerts Page");
+		  action.scrollToElement();
+		  action.Clickelement(alertsPage);
+		  return new AlertsPage();
+	  }
 }

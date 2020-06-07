@@ -1,8 +1,0 @@
-package com.Pages;
-
-import com.Setup.TestBase;
-
-public class WidgetPage  extends TestBase
-{
-
-}

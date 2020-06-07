@@ -79,8 +79,8 @@ public class HomePageTest extends TestBase
    {
 	   Log.info("Practice Forms");
 	   formPage = homePage.naviageteToFormsPage();
-	   Assert.assertEquals(formPage.titleOfPage(),"ToolsQA");
-	   Assert.assertEquals(formPage.objectiveOfPage(),"Please select an item from left to start practice.");
+	   Log.asserts(formPage.titleOfPage(),"ToolsQA");
+	   Log.asserts(formPage.objectiveOfPage(),"Please select an item from left to start practice.");
 	
 	   formPage.SwitchToPracticeForm();
 	   formPage.fillthePerform();

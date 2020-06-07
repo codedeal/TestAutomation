@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.Wait"/>
-<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-<fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
-<fullyQualifiedTypeName name="java.time.temporal.TemporalUnit"/>
-<fullyQualifiedTypeName name="java.time.Duration"/>
-<fullyQualifiedTypeName name="com.Pages.Resizable"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
 <fullyQualifiedTypeName name="com.Pages.HomePage"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -16,9 +10,7 @@
 <fullyQualifiedTypeName name="com.Pages.ResizablePage"/>
 <fullyQualifiedTypeName name="com.Pages.DraggablePage"/>
 <fullyQualifiedTypeName name="com.Actions.Action"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBys"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="org.testng.ITestNGListener"/>
 <fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.ExtentSparkReporter"/>
@@ -42,7 +34,6 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="com.Utility.CaptureScreen"/>
 <fullyQualifiedTypeName name="com.Pages.DroppablePage"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.remote.DesiredCapabilities"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Platform"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.remote.RemoteWebDriver"/>
@@ -53,11 +44,20 @@
 <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
-<fullyQualifiedTypeName name="com.Setup.TestBase"/>
 <fullyQualifiedTypeName name="com.Pages.FormsPage"/>
-<fullyQualifiedTypeName name="com.Utility.Log"/>
 <fullyQualifiedTypeName name="com.SmokeSuite.WidgetPageTest"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="com.Pages.WidgetPage"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.SmokeSuite.ElementsPageTest"/>
+<fullyQualifiedTypeName name="com.Setup.TestBase"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="com.Pages.ElementsPage"/>
+<fullyQualifiedTypeName name="com.Utility.Log"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

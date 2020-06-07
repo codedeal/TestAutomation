@@ -1,6 +1,5 @@
 package com.SmokeSuite;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -34,7 +33,7 @@ public class WidgetPageTest extends TestBase
 	
 		wPage.selectSlider();
 		
-		Assert.assertEquals(wPage.getHeaderOfPage(), "Slider");
+		Log.asserts(wPage.getHeaderOfPage(), "Slider");
 		wPage.setSliderValue("70");
 		
 		
@@ -45,9 +44,9 @@ public class WidgetPageTest extends TestBase
 		Log.info("Changing the progrssBar");
 		WidgetPage wPage=homePage.naviageteToWidgetPage();
 		wPage.selectProgrssbar();
-		Assert.assertEquals(wPage.getHeaderOfPage(), "Progress Bar");
+		Log.asserts(wPage.getHeaderOfPage(), "Progress Bar");
 		wPage.setProgressBarValue("58");
-		Assert.assertEquals(wPage.getProgressBarCurrentValue(), "5");
+		Log.asserts(wPage.getProgressBarCurrentValue(), "5");
 	}
 	
 	 @AfterMethod
