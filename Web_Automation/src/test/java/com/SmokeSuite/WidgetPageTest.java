@@ -48,6 +48,19 @@ public class WidgetPageTest extends TestBase
 		wPage.setProgressBarValue("58");
 		Log.asserts(wPage.getProgressBarCurrentValue(), "5");
 	}
+	@Test
+	public void changeTabsAndVerifyIt()
+	{
+		Log.info("Changing the Tasr");
+		WidgetPage wPage=homePage.naviageteToWidgetPage();
+		wPage.selectTabs();
+		Log.asserts(wPage.getHeaderOfPage(), "Tabs");
+		wPage.VerifyTabOptions();
+		wPage.selectTabOptions("Origin");
+		wPage.selectTabOptions("Use");
+		
+	}
+	
 	
 	 @AfterMethod
 		public void tearDown(){
